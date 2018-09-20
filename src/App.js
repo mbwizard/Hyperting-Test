@@ -8,20 +8,38 @@ class App extends Component {
     this.state = {}
     this.handleClick = this.handleClick.bind(this)
   }
-
-
+ 
+  clearClick()
+  {
+    localStorage.clear("frasi_salvate");
+    window.location.reload();
+  }
 
   handleClick () {
     axios.get('https://api.chucknorris.io/jokes/random')
       .then(response => this.setState({frase: response.data.value}))
-      localStorage.setItem("memoria", this.state.frase);
-    }
+      .then(result => this.onSetResult());
+  }
+
+  onSetResult = () => {
+    var frasi=[];
+    if(localStorage.getItem("frasi_salvate")!==null)
+    frasi.push(localStorage.getItem("frasi_salvate"));
+    frasi.push(this.state.frase);
+    localStorage.setItem("frasi_salvate", frasi);
+    window.location.reload();
+  }
+    
 
   render () {
+    const data =[];
+    data.pop(localStorage.getItem("frasi_salvate"));
     return (
+      
       <div>
         <button className='button' onClick={this.handleClick}>Estrai frase</button>
-        <p>{localStorage.getItem("memoria")}</p>
+        <button className='button' onClick={this.clearClick}>Cancella tutto</button>
+        <p>{localStorage.getItem("frasi_salvate")}</p>
       </div>
     )
   }
