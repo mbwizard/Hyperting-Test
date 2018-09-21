@@ -6,10 +6,10 @@ L’applicazione permette di scaricare nel local storage e visualizzare, tramite
 
 Risorse utili
 -------------
-+[Chuck Norris api](https://api.chucknorris.io/).
-+[React Guide](https://reactjs.org/docs/getting-started.html).
-+[Create-react-app](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app).
-+[Come commentare il codice](http://usejsdoc.org/).
++ [Chuck Norris api](https://api.chucknorris.io/).
++ [React Guide](https://reactjs.org/docs/getting-started.html).
++ [Create-react-app](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app).
++ [Come commentare il codice](http://usejsdoc.org/).
 
 Sviluppi futuri
 ---------------
