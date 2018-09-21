@@ -1,0 +1,32 @@
+Ho proceduto con i seguenti step:
+
+Svolti:
+
+-Configurazione vsCode e git
+-Inizializzazione app
+-Analisi dei requisiti
+-Documentazione durante il ciclo di sviluppo
+-Installazione “Axios”
+-Sviluppo della funzionalità “fetch“(download della frase) con Axios
+-Gestione della chiamata get asincrona
+-Parsing della frase
+-Sviluppo del salvataggio su LocalStorage delle frasi
+-Parsing delle frasi
+-Implementazione reactStrap
+
+Non svolti:
+
+-Aggiornamento parziale della pagina
+-Sviluppo della funzionalità di clear ‘selettiva’
+
+
+Problemi riscontrati:
+
+-Gestione dei componenti da utilizzare per ottenere l’aggiornamento parziale della pagina (refresh del solo paragrafo della frase). Il primo click del pulsante non fa visualizzare la frase.
+-Visualizzazione su più linee della frase
+-Eliminazione singola frase
+
+Idee:
+
+-La reattività della pagina è da gestire, usando componenti ad hoc per ogni frase.
+-L'implementazione della funzionalità "rimuovi una singola frase" in un prima fase la implementerei tramite un pulante ed un input "number" che indica l'indice della frase da rimuovere.
